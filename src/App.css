@@ -15,7 +15,6 @@ body, html {
   justify-content: center; align-items: center; font-size: 100px; 
 }
 
-/* CABECERA NUEVA */
 .cabecera { 
   height: 400px; 
   display: flex; 
@@ -36,14 +35,18 @@ body, html {
 
 .izquierdo { width: 300px; align-items: flex-start; }
 .central { flex-grow: 1; align-items: center; }
-.derecho { width: 300px; align-items: flex-end; }
 
-/* LOGO CUADRADO */
+/* AJUSTE BLOQUE DERECHO (QR y Texto) */
+.derecho { 
+  width: 300px; 
+  align-items: center; 
+}
+
 .logo { 
   width: 220px; 
   height: 220px; 
-  object-fit: contain; /* Ajusta la imagen sin recortarla */
-  border-radius: 0; /* Quitamos el círculo */
+  object-fit: contain; 
+  border-radius: 0; 
 }
 
 .cabecera h1 { 
@@ -53,14 +56,7 @@ body, html {
   font-weight: bold; 
 }
 
-/* SECCIÓN QR */
-.qr-texto {
-  font-size: 30px;
-  color: #555;
-  margin: 0 0 15px 0;
-  font-weight: bold;
-}
-
+/* AJUSTE QR Y TEXTO */
 .qr-img { 
   width: 180px; 
   height: 180px; 
@@ -70,7 +66,14 @@ body, html {
   border: 1px solid #E0E0E0;
 }
 
-/* PRODUCTO DESTACADO */
+.qr-texto {
+  font-size: 26px;
+  color: #555;
+  margin: 20px 0 0 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .destacado-container {
   position: relative; width: 1400px; height: 1800px;
   margin: 0 auto 100px auto; border-radius: 15px; overflow: hidden;
@@ -88,20 +91,18 @@ body, html {
 .marca { font-size: 30px; color: #888; text-transform: uppercase; display: block; margin-bottom: 15px;}
 .tarjeta-destacada h2 { font-size: 55px; margin: 0 0 35px 0; }
 
-/* PRECIO PRINCIPAL CON RECUADRO */
 .tarjeta-destacada .precio { 
   font-size: 55px; 
   font-weight: bold; 
   margin-bottom: 40px; 
-  border: 1px solid #D0D0D0; /* Borde suave */
-  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  border: 1px solid #D0D0D0;
+  border-radius: 4px; 
   padding: 15px 30px;
-  display: inline-block; /* Para que el recuadro se ajuste al texto */
+  display: inline-block; 
 }
 
 .boton-falso { background: #111; color: #FFF; padding: 25px; font-size: 35px; border-radius: 5px; }
 
-/* PRODUCTOS SECUNDARIOS */
 .secundarios-grid { 
   display: flex; justify-content: center; gap: 60px; padding: 0 120px; 
 }
@@ -111,7 +112,6 @@ body, html {
 .info-secundaria { padding: 40px 30px; text-align: center; }
 .info-secundaria h3 { font-size: 40px; margin: 0 0 25px 0; height: 95px; display: flex; align-items: center; justify-content: center;}
 
-/* PRECIO SECUNDARIO CON RECUADRO */
 .precio-secundario { 
   font-size: 45px; 
   font-weight: bold; 
@@ -120,5 +120,45 @@ body, html {
   border-radius: 4px; 
   padding: 10px 25px;
   display: inline-block;
+  margin: 0;
+}
+
+/* NUEVO PIE DE PÁGINA REDES SOCIALES */
+.pie-pagina-redes {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background-color: #FAFAFA;
+  border-top: 2px solid #F0F0F0;
+  padding-bottom: 40px;
+}
+
+.texto-siguenos {
+  font-size: 30px;
+  color: #666;
+  letter-spacing: 3px;
+  margin: 0 0 30px 0;
+  font-weight: bold;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.icono-red {
+  width: 70px;
+  height: 70px;
+  color: #222;
+}
+
+.texto-arroba {
+  font-size: 45px;
+  font-weight: bold;
+  color: #111;
   margin: 0;
 }
