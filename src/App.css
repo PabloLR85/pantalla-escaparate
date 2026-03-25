@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+.pantalla-gigante {
+  width: 2160px;
+  height: 3840px;
+  background-color: #FAFAFA;
+  color: #1A1A1A;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.cargando {
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #888;
+}
+
+/* CABECERA (Reducida en altura) */
+.cabecera {
+  height: 420px; /* Reducido de 500px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 3px solid #EAEAEA;
+}
+
+.titulos-cabecera {
+  text-align: center;
+}
+
+.titulos-cabecera h1 {
+  font-weight: 700;
+  font-size: 110px;
+  margin: 0;
+  letter-spacing: 2px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+/* PRODUCTO DESTACADO (Mismo formato vertical) */
+.destacado-container {
+  position: relative;
+  width: 1300px;
+  height: 1685px;
+  margin: 0 auto 80px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+  background-color: #FFF;
+}
+
+.imagen-destacada {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.tarjeta-destacada {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  background-color: rgba(255, 255, 255, 0.98);
+  padding: 50px 70px;
+  border-radius: 15px;
+  text-align: center;
+  width: 550px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.marca {
+  font-size: 35px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.tarjeta-destacada h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 25px 0;
+  line-height: 1.2;
+  color: #111;
+}
+
+.tarjeta-destacada .precio {
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.boton-falso {
+  background-color: #222;
+  color: white;
+  padding: 25px 0;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+/* PRODUCTOS SECUNDARIOS */
+.secundarios-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: auto;
+  padding: 0 100px;
+}
+
+.tarjeta-secundaria {
+  width: 550px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-secundaria {
+  width: 100%;
+  height: 710px; 
+  object-fit: cover;
+  object-position: top;
+}
+
+/* CORRECCIÓN: Adaptamos la caja sin el texto ESCANÉALO */
+.info-secundaria {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* Centramos el contenido restante verticalmente */
+  justify-content: center; 
+  gap: 20px; /* Separación limpia entre título y precio */
+}
+
+.info-secundaria h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+  color: #222;
+}
+
+.precio-secundario {
+  font-size: 50px;
+  font-weight: 700;
+  color: #222;
+  margin: 0; /* Eliminamos márgenes antiguos */
+}
+
+/* PIE DE PÁGINA */
+.pie-pagina {
+  background-color: #F8F8F8;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #EEE;
+}
+
+.qr-placeholder img {
+  width: 220px;
+  height: 220px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: -120px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.textos-pie {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.pie-llamada {
+  font-size: 35px;
+  color: #666;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.pie-web {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.pie-redes {
+  font-size: 35px;
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+}
